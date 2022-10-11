@@ -17,3 +17,14 @@ class Debug {
         }
     }
 }
+
+class Scene {
+    constructor() {
+        this.fill = (col) => {
+            document.querySelector('body').style.background = col;
+        }
+        this.add = (obj) => {
+            document.querySelector('body').appendChild(obj)
+        }
+    }
+}
