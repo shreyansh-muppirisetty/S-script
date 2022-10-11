@@ -26,5 +26,8 @@ class Scene {
         this.add = (obj) => {
             document.querySelector('body').appendChild(obj)
         }
+        this.html = (html) => {
+            document.querySelector('body').innerHTML += html;
+        }
     }
 }
